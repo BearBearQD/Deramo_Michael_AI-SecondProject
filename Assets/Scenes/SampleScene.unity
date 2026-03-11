@@ -153,9 +153,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ParadoxNotion::NodeCanvas.Framework.Blackboard
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{}}'
+  _serializedBlackboard: '{"_variables":{"Speed":{"_value":5.0,"_name":"Speed","_id":"2b43f315-3b68-42c7-9bfd-3b31fedb9d9d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Distance":{"_value":1.0,"_name":"Distance","_id":"116c6650-bb1a-4d50-b346-ad8a275dca7a","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
-  _serializedVariables: []
+  _serializedVariables:
+  - _json: '{"_value":5.0,"_name":"Speed","_id":"2b43f315-3b68-42c7-9bfd-3b31fedb9d9d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":1.0,"_name":"Distance","_id":"116c6650-bb1a-4d50-b346-ad8a275dca7a","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
 --- !u!114 &138736695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,8 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: NodeCanvas::NodeCanvas.BehaviourTrees.BehaviourTreeOwner
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":544.0,"y":210.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"0"},{"_action":{"targetPoint":1,"speed":5.0,"arrivalDistance":0.5,"$type":"NodeCanvas.Tasks.Actions.MoveToPointAT"},"_tag":"Move
-    to point AT","_position":{"x":406.0,"y":306.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"1"},{"_action":{"targetPoint":2,"speed":5.0,"arrivalDistance":0.5,"$type":"NodeCanvas.Tasks.Actions.MoveToPointAT"},"_position":{"x":591.0,"y":307.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"2"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":544.0,"y":210.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"0"},{"_action":{"targetPoint":1,"speed":{"_name":"Speed","_targetVariableID":"2b43f315-3b68-42c7-9bfd-3b31fedb9d9d"},"arrivalDistance":{"_name":"Distance","_targetVariableID":"116c6650-bb1a-4d50-b346-ad8a275dca7a"},"$type":"NodeCanvas.Tasks.Actions.MoveToPointAT"},"_tag":"Move
+    to point AT","_position":{"x":407.0,"y":307.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"1"},{"_action":{"targetPoint":2,"speed":{"_name":"Speed","_targetVariableID":"2b43f315-3b68-42c7-9bfd-3b31fedb9d9d"},"arrivalDistance":{"_name":"Distance","_targetVariableID":"116c6650-bb1a-4d50-b346-ad8a275dca7a"},"$type":"NodeCanvas.Tasks.Actions.MoveToPointAT"},"_position":{"x":591.0,"y":307.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"2"},{"_position":{"x":972.0,"y":312.0},"$type":"NodeCanvas.BehaviourTrees.ConditionNode"},{"_position":{"x":639.2274,"y":524.221},"$type":"NodeCanvas.BehaviourTrees.Parallel"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 1999094394}
@@ -179,7 +187,7 @@ MonoBehaviour:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: 0, y: 0}
+    _translation: {x: -15.596298, y: -182.8644}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
